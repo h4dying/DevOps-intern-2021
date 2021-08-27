@@ -1,0 +1,37 @@
+1- sudo useradd -m islam -c "Islam Askar"; sudo passwd islam
+
+2- sudo useradd -m baduser -c "Bad User"; sudo passwd baduser
+
+3- sudo groupadd pgroup -g 30000
+
+4- sudo groupadd badgroup
+
+5- sudo usermod -aG pgroup islam
+
+6- sudo passwd islam
+
+7- sudo chage islam -M 30
+
+8- sudo chage -E 0 baduser OR sudo passwd -l baduser
+
+9- sudo userdel -r baduser
+
+10- sudo groupdel badgroup
+
+13- sudo chmod u-wx myteam/
+
+14- sudo su - islam
+
+15- cd /home/ahm3d/myteam
+
+17- Permission for source directory: read and execute, Permission for destination directory: write and execute.
+
+    Permission for source file: read, Permission for destination file: if the file exist we need write Permission, otherwise we don't need any Permission since the file is not exist.
+
+    Permission for a file to delete is 
+
+
+19- x Permission for file is execute, x Permission for directory is entering the directory (like cd dir)
+
+20- sleep 100 & 
+
